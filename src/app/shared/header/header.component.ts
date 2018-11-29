@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PageDataService } from '../../services/PageData.service';
+import { DataPage } from '../../interfaces/DataPage';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(public pageDataService: PageDataService) {
+  }
 
   ngOnInit() {
   }
